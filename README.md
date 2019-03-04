@@ -1,6 +1,6 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/image)
 
-# MobileAppsCourse
+# Mobile Apps Course
 This repository contains projects used for teaching purposes and, as such, source code is often not optimized and should not be used in production.
 
 ## Table of Contents
