@@ -8,20 +8,19 @@
 ### Hello World Android project
 >Goal of this task is to explore and create your first Android project with Android Studio.
 1. [Download and install Android Studio](https://developer.android.com/studio/)
-2. [Download and install Java JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-3. Open Android Studio
-4. Click on Start a new Android Studio project
-5. Explore different project types
-6. On tab **Phone and Table** select **Empty Activity**
-7. Name the project **HelloWorldAndroid**
-8. [Android Package name conventions](https://stackoverflow.com/questions/6273892/android-package-name-convention)
-9. Set the package name to **hr.yourname.yoursurname.helloworld** 
+2. Open Android Studio
+3. Click on Start a new Android Studio project
+4. Explore different project types
+5. On tab **Phone and Table** select **Empty Activity**
+6. Name the project **HelloWorldAndroid**
+7. [Android Package name conventions](https://stackoverflow.com/questions/6273892/android-package-name-convention)
+8. Set the package name to **hr.yourname.yoursurname.helloworld** 
    Example: **hr.dominik.koscica.helloworld**
-10. Set language to **Java**
-11. [Explore Android Dashboards](https://developer.android.com/about/dashboards)
-12. Set minimum API level to **API 23 Android 6.0**
-13. Enable Use AndroidX artifacts
-14. Wait for Gradle process to complete
+9. Set language to **Java**
+10. [Explore Android Dashboards](https://developer.android.com/about/dashboards)
+11. Set minimum API level to **API 23 Android 6.0**
+12. Enable Use AndroidX artifacts
+13. Wait for Gradle process to complete
 ---
 ### Create a new Android Virtual Device
 >Goal of this task is to create your first Android Virtual Device with Android Studios AVD Manager.
