@@ -2,6 +2,7 @@
 # Lab 1
 - [Hello World Android project](#Hello-World-Android-project)
 - [Create a new Android Virtual Device](#Create-a-new-Android-Virtual-Device)
+- [(Optional) Run on a real device](#Run-on-a-real-device)
 - [Android project structure](#Android-project-structure)
 - [Explore Android Studio](#Explore-Android-Studio)
 ---
@@ -39,8 +40,26 @@
 10. Click on **Finish**
 11. Use the Find Action shortcut **(CTRL+Shift+A/Command+Shift+A)**
 12. Type **run** and select **Run app**
-13. Select your **Pixel 2** device and enable **Use the same selection for future launches**
-14. The Pixel 2 emulator should appear on your screen and the **Hello World app** should open.
+13. The Pixel 2 emulator should appear on your screen and the **Hello World app** should open.
+---
+### (Optional) Run on a real device
+>Goal of this task is to run the Hello World app on a real device.
+
+**Set up your device as follows:**
+1. Connect your device to your development machine with a USB cable. If you're developing on Windows, you might need to install the appropriate USB driver for your device.
+2. Enable **USB debugging** in the **Developer options** as follows.
+First, you must enable the developer options:
+    * Open the **Settings** app.
+    * (Only on Android 8.0 or higher) Select **System**.
+    * Scroll to the bottom and select **About phone**.
+    * Scroll to the bottom and tap **Build number** 7 times.
+    * Return to the previous screen to find **Developer options** near the bottom.
+    * Open **Developer options**, and then scroll down to find and enable **USB debugging**
+
+**Run the app on your device as follows**
+* In Android Studio, click the **app** module in the **Project** window and then select **Run > Run** (or click Run  in the toolbar).
+* In the **Select Deployment Target window**, select your device, and click **OK**.
+* Android Studio installs the app on your connected device and starts it. You should now see "Hello World!" displayed in the app running on your device.
 ---
 ### Android project structure
 >Goal of this task is to get a brief overview of the Android project structure.
