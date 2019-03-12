@@ -1,6 +1,7 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/?s=50)
 # Lab 1
 - [Hello World Android project](#Hello-World-Android-project)
+- [Change Android Studio Theme](#Change-Android-Studio-Theme)
 - [Create a new Android Virtual Device](#Create-a-new-Android-Virtual-Device)
 - [(Optional) Run on a real device](#Run-on-a-real-device)
 - [Android project structure](#Android-project-structure)
@@ -22,6 +23,13 @@
 11. Set minimum API level to **API 23 Android 6.0**
 12. Enable Use AndroidX artifacts
 13. Wait for Gradle process to complete
+---
+### Change Android Studio Theme
+>Goal of this task is to change the Android Studio Theme to a Darker Theme named **Dracula**.
+1. Use the Find Action shortcut **(CTRL+Shift+A/Command+Shift+A)**
+2. Type **theme** and select **Theme: Preferences/Appearance**
+3. Change the Theme from **Light** to **Dracula**
+4. Apply changes
 ---
 ### Create a new Android Virtual Device
 >Goal of this task is to create your first Android Virtual Device with Android Studios AVD Manager.
