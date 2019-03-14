@@ -15,6 +15,8 @@ This repository contains projects used for teaching purposes and, as such, sourc
 ### Lectures
 - [Introduction](https://drive.google.com/file/d/1GGI3eorrtkV2T7eT3INalHwVrLvhI4CU/view)
 - [Introduction to Android](https://drive.google.com/file/d/13ssc9zkdFF1GZD8FzkgJyqbhaKFutir6/view)
+- [Git](https://drive.google.com/file/d/1upElV6Dig-TgPJhM43zDO0XtOF8hF0-0/view)
+
 ---
 ### Installation
 * Android Studio https://developer.android.com/studio/
