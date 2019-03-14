@@ -6,6 +6,8 @@
 - [(Optional) Run on a real device](#Run-on-a-real-device)
 - [Android project structure](#Android-project-structure)
 - [Explore Android Studio](#Explore-Android-Studio)
+- [Instant Run](#Instant-Run)
+
 ---
 ### Hello World Android project
 >Goal of this task is to explore and create your first Android project with Android Studio.
@@ -105,7 +107,14 @@ A project in Android Studio contains everything that defines your workspace for 
 >Goal of this task is to explore the Android Studio IDE.
 1. Read [11 Android Studio Shortcuts every Android Developer must know](https://medium.com/mindorks/11-android-studio-shortcuts-every-android-developer-must-know-a153e736e611)
 2. Try out all these 11 shortcuts
-
+---
+### Instant Run
+>Goal of this task is to tryout the Android Studio Instant Run (Apply Changes) feature.
+1. Open **strings.xml** file and add a new string value with a key **hello_world** and value **Hello World!**
+2. Open **activity_main.xml** and replace the hardcoded Hello World! value with **@string/hello_world**
+3. Run the app and check if everything works as before
+4. Go back to **strings.xml** file and change the value **Hello World!** to **Hello World Lab1!**
+5. Click on the **Apply Changes** button (Lightning icon). The app should hot reload the changes without building a new APK.
 ---
 ### License
 * Copyright 2019 © Dominik Košćica.
