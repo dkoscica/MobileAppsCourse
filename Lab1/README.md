@@ -39,7 +39,7 @@
 2. Type **avd** and select **AVD Manager**
 3. Click on **Create Virtual Device**
 4. Explore device categories
-5. In the **Phone** category select **Pixel 2** and click on **Next** button
+5. In the **Phone** category select **Nexus 5X** and click on **Next** button
 6. Select the **Recommended** tab Use the latest Android image version: 
    API: **Level 28**
    ABI: **x86**
