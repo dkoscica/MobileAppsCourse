@@ -118,6 +118,9 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+# Playground project
+Playground/
+
 ### AndroidStudio Patch ###
 
 !/gradle/wrapper/gradle-wrapper.jar
