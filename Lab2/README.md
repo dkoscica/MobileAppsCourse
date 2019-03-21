@@ -10,6 +10,7 @@
 
 ##### Requirements
 * Add the following key value pairs to **strings.xml** and add the translated string values to **values-hr/strings.xml**
+    
     Key  | Value
     ------------- | -------------
     hint_email  | Email
