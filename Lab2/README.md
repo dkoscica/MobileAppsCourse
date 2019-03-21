@@ -14,6 +14,7 @@ https://proandroiddev.com/what-is-android-app-localization-and-why-should-you-ca
 
 **Requirements**
 Add the following key value pairs to **strings.xml** and add the translated string values to **values-hr/strings.xml**
+
 Key  | Value
 ------------- | -------------
 hint_email  | Email
@@ -26,8 +27,7 @@ label_login  | Login
 ### Implement Login design
 >Goal of this task is to implement the required design.
 
-<img src="LoginScreenDesign_1.png" width="606" height="1281">
-<img src="LoginScreenDesign_2.png" width="606" height="1281">
+<img src="LoginScreenDesign_1.png" width="270" height="480"><img src="LoginScreenDesign_2.png" width="270" height="480">
 
 * **Documentation**
     * https://guides.codepath.com/android/Working-with-the-EditText
