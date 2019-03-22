@@ -3,7 +3,8 @@
 Goal of this lab is to introduce Android Views, ViewGroups, Layouts, form validation and resource management.
 
 ## 1. Update resources
-Goal of this task is to add and update strings files and add one additional localization. 
+Goal of this task is to add and update strings files and add one additional localization.</br>
+The max point value for this task is **1 point**.
 
 ### Documentation
 * https://proandroiddev.com/what-is-android-app-localization-and-why-should-you-care-e4ba72f867fa
@@ -20,7 +21,8 @@ Goal of this task is to add and update strings files and add one additional loca
     label_login  | Login
     
 ## 2. Implement Login design
-Goal of this task is to implement the required design.
+Goal of this task is to implement the required design.</br>
+The max point value for this task is **2 points**.
 
 <img src="LoginScreenDesign_1.png" width="270" height="480"><img src="LoginScreenDesign_2.png" width="270" height="480">
 
@@ -40,7 +42,8 @@ Goal of this task is to implement the required design.
     * the **inputType** must be **textPassword** 
 
 ## 3. Form validation 
-Goal of this task is to implement validation with a TextWatcher to enable field validation during typing.
+Goal of this task is to implement validation with a TextWatcher to enable field validation during typing.</br>
+The max point value for this task is **2 points**.
 
 ### Documentation
 * https://developer.android.com/guide/topics/ui/notifiers/toasts
