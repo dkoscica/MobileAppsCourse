@@ -14,6 +14,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 ---
 ### Lectures
 - [Introduction](https://drive.google.com/file/d/1GGI3eorrtkV2T7eT3INalHwVrLvhI4CU/view)
+- [Lab Scoring](https://drive.google.com/file/d/1-g0cUngsovRBfbFCHTFRbG45WUiKqC4U/view)
 - [Introduction to Android](https://drive.google.com/file/d/13ssc9zkdFF1GZD8FzkgJyqbhaKFutir6/view)
 - [Git](https://drive.google.com/file/d/1upElV6Dig-TgPJhM43zDO0XtOF8hF0-0/view)
 - [Anatomy of Android App](https://drive.google.com/file/d/1jHADFUweUU99wLyOI6p48E0SuaSyebmn/view)
