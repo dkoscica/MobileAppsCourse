@@ -19,6 +19,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Git](https://drive.google.com/file/d/1upElV6Dig-TgPJhM43zDO0XtOF8hF0-0/view)
 - [Anatomy of Android App](https://drive.google.com/file/d/1jHADFUweUU99wLyOI6p48E0SuaSyebmn/view)
 - [Android Views & Layouts](https://drive.google.com/file/d/1-VPBwI9hVblZREkUZGwCrdeFk9pQBptk/view)
+- [Android Resources](https://drive.google.com/file/d/1kLeyrh6rzx89Z9Bd2rDkjmL_SyM57-Me/view)
 
 ## Design
 - [Material Design](https://material.io/design/)
