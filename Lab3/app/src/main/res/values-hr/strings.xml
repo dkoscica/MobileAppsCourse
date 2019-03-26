@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Lozinka</string>
+    <string name="error_email">Neispravan email format!</string>
+    <string name="error_password">Neispravan format lozinke!</string>
+    <string name="label_login">Prijava</string>
+</resources>

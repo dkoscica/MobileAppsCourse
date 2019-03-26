@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="error_email">Invalid email format!</string>
+    <string name="error_password">Invalid password format!</string>
+    <string name="label_login">Login</string>
+</resources>
