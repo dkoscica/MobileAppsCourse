@@ -20,6 +20,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Anatomy of Android App](https://drive.google.com/file/d/1jHADFUweUU99wLyOI6p48E0SuaSyebmn/view)
 - [Android Views & Layouts](https://drive.google.com/file/d/1-VPBwI9hVblZREkUZGwCrdeFk9pQBptk/view)
 - [Android Resources](https://drive.google.com/file/d/1kLeyrh6rzx89Z9Bd2rDkjmL_SyM57-Me/view)
+- [Activity](https://drive.google.com/file/d/1DhfYTitWSgDcMgUQCbfxluFDoYS8aUiG/view)
 - [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
 
 ## Design
