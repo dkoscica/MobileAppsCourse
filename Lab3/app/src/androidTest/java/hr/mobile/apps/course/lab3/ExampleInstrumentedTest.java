@@ -1,4 +1,4 @@
-package hr.mobile.apps.course.lab2;
+package hr.mobile.apps.course.lab3;
 
 import android.content.Context;
 
