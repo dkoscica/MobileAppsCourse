@@ -65,6 +65,8 @@ The max point value for this task is **1 points**.
 * Use the first item of the BookRepository items list to setup the view
 * Extract the **CardView** layout to a separate **rv_item_book.xml** layout and put it in the **res/layout** folder
 * Include the **rv_item_book.xml** layout into the **activity_home.xml** layout
+* Given that the user taps on the CardView container the HomeActivity should be closed and the user should be redirected to the LoginActivity
+
 
 ## License
 * Copyright 2019 © Dominik Košćica.
