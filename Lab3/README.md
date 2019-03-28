@@ -1,65 +1,71 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/?s=50)
-# Lab 2
-> Goal of this lab is to introduce Android Views, ViewGroups, Layouts, form validation and resource management.
 
-- [Update resources](#Update-Resources)
-- [Implement Login design](#Implement-Login-design)
-- [Form Validation](#Form-Validation)
----
-### Update resources
->Goal of this task is to add and update strings files and add one additional localization. 
+# Lab 3
+Goal of this lab is to introduce Snackbars, Activity Lifecycles, Intents and CardView.
 
-**Documentation** 
-https://proandroiddev.com/what-is-android-app-localization-and-why-should-you-care-e4ba72f867fa
+## 1. Update LoginActivity
+Goal of this task is to replace the Toast message with a Snackbar. Open a webpage with an Intent object and store the form values during rotation changes.</br>
+The max point value for this task is **2 point**.
 
-**Requirements**
-Add the following key value pairs to **strings.xml** and add the translated string values to **values-hr/strings.xml**
-Key  | Value
-------------- | -------------
-hint_email  | Email
-hint_password  | Password
-error_email  | Invalid email format!
-error_password  | Invalid password format!
-label_login  | Login
-    
----
-### Implement Login design
->Goal of this task is to implement the required design.
+### Documentation
+* https://developer.android.com/training/snackbar
+* https://developer.android.com/guide/components/activities/activity-lifecycle
 
-<img src="LoginScreenDesign_1.png" width="606" height="1281">
-<img src="LoginScreenDesign_2.png" width="606" height="1281">
+### Requirements
+* Given that the user has entered invalid credentials a **Snackbar** should be shown instead of the **Toast** message. Credentials are considered invalid if the email & password format is invalid.
+* Given that the user clicks on the vvg.hr open the VVG website with an **Intent**. The website link and **TextView** text must be accessed through **strings.xml** and the values must be stored in both localizations.
+* Given that the user has rotated his device the email & password values should be stored in the Activity state with the help of **onSaveInstanceState/onRestoreInstanceState** methods. In case of a rotation change the EditText field should persist the entered value.
 
-* **Documentation**
-    * https://guides.codepath.com/android/Working-with-the-EditText
-* **Suggestions** 
-    * LinearLayout is prefered
-* **Resources** 
-    * The **res/drawable** folder contains the **logo.png**, **ic_email.png** and **ic_password.png**
-* **Requirements**
-    * The **setupView** method in the **LoginActivity** must be used to initialize UI components
-    * The email field must have the following properties:
-        * hint and error from **strings.xml** must be used
-        * the **inputType** must be **textEmailAddress** 
-     * The password field must have the following properties:
-        * hint and error from **strings.xml** must be used
-        * the **inputType** must be **textPassword** 
----
+## 2. HomeActivity
+Goal of this task is to create a new HomeActivity and open the HomeActivity on successful login.</br>
+The max point value for this task is **1 point**.
 
-### Form validation 
->Goal of this task is to implement validation with a TextWatcher to enable field validation during typing.
+### Requirements
+* Add a new Activity with the name **HomeActivity** within the screen package.
+* Check if the HomeActivity is listed in the **AndroidManifest.xml**, if it's not you have to add it manualy.
+* Given that the user has clicked on the Login button and entered valid credentials the user should be redirected to the **HomeActivity**. Credentials are considered valid if the email & password format is valid.
 
-* **Documentation** 
-    * https://developer.android.com/guide/topics/ui/notifiers/toasts
-* **Requirements**
-    * Implement a **TextWatcher** for the **email** & **password** fields 
-    * Validation for **email** and **password** must be implemented with the help of the **Validator** util class which can be found within the **util** package
-    * Expand the **Validator** class with an additional method:
-        **boolean isValidPassword(String password)** 
-        The method should return **true** only when the password is not empty and has at least **5** characters
-    * If the email and password fields are both valid, display a **Toast** message with the following format
-        ```
-        "You have successfully logged in with your email: " + email + " and password: " + password
-        ```
----
-### License
+## 3. BookRepository
+Goal of this task is to add the Book model to the project and implement the BookRepository.</br>
+The max point value for this task is **1 points**.
+
+### Requirements
+* Create a new package with the name **model** and create a new Java class with the name **Book** within the **model** package.</br> Getters & Setters must be used.
+ For the implementation details refer to the UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
+* Create a new package with the name **repository** and create a new Java class with the name **BookRepository** within the **repository** package.
+* Add the following code snippet to the **BookRepository** class
+    ```java
+    public class BookRepository {
+
+        private List<Book> books;
+
+        public BookRepository() {
+            books = new ArrayList<>();
+            books.add(new Book("Head First Android Development", "Dawn Griffiths ", 2017, 45.0));
+            books.add(new Book("Android Studio 3.0 Development Essentials - Android 8 Edition", "Neil Smyth", 2017, 50.0));
+            books.add(new Book("Android Programming: The Big Nerd Ranch Guide (3rd Edition)", "Bill Phillips, Chris Stewart, and Kristin Marsicano", 2017, 55.0));
+        }
+
+        public List<Book> getBooks() {
+            return books;
+        }
+    }
+    ```
+
+## 3. Implement HomeActivity design
+Goal of this task is to add the Book model to the project and implement the HomeScreen design.</br>
+The max point value for this task is **1 points**.
+
+<img src="HomeScreenDesign.png">
+
+### Documentation
+* https://developer.android.com/guide/topics/ui/layout/cardview
+
+### Requirements
+* Implement the required design, **CardView** must be used!
+* Use the first item of the BookRepository items list to setup the view
+* Extract the **CardView** layout to a separate **rv_item_book.xml** layout and put it in the **res/layout** folder
+* Include the **rv_item_book.xml** layout into the **activity_home.xml** layout
+
+## License
 * Copyright 2019 © Dominik Košćica.

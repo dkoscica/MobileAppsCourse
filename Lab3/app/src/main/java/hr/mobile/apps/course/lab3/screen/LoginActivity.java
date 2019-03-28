@@ -10,9 +10,9 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import hr.mobile.apps.course.lab2.util.Validator;
-import hr.mobile.apps.course.lab2.util.ViewUtil;
 import hr.mobile.apps.course.lab3.R;
+import hr.mobile.apps.course.lab3.util.Validator;
+import hr.mobile.apps.course.lab3.util.ViewUtil;
 
 /**
  * A login screen that offers login via email/password.

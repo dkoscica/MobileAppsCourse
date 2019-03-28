@@ -1,4 +1,4 @@
-package hr.mobile.apps.course.lab2.util;
+package hr.mobile.apps.course.lab3.util;
 
 import android.text.TextUtils;
 import android.util.Patterns;
