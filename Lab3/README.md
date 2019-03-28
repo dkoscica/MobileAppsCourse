@@ -30,8 +30,7 @@ Goal of this task is to add the Book model to the project and implement the Book
 The max point value for this task is **1 points**.
 
 ### Requirements
-* Create a new package with the name **model** and create a new Java class with the name **Book** within the **model** package.</br> Getters & Setters must be used.
- For the implementation details refer to the UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
+* Create a new package with the name **model** and create a new Java class with the name **Book** within the **model** package. Getters & Setters must be used. For the implementation details refer to the UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
 * Create a new package with the name **repository** and create a new Java class with the name **BookRepository** within the **repository** package.
 * Add the following code snippet to the **BookRepository** class
     ```java
@@ -53,10 +52,10 @@ The max point value for this task is **1 points**.
     ```
 
 ## 3. Implement HomeActivity design
-Goal of this task is to add the Book model to the project and implement the HomeScreen design.</br>
+Goal of this task is to implement the HomeScreen design.</br>
 The max point value for this task is **1 points**.
 
-<img src="HomeScreenDesign.png">
+<img src="HomeScreenDesign.png" width="540" height="960">
 
 ### Documentation
 * https://developer.android.com/guide/topics/ui/layout/cardview
@@ -66,6 +65,8 @@ The max point value for this task is **1 points**.
 * Use the first item of the BookRepository items list to setup the view
 * Extract the **CardView** layout to a separate **rv_item_book.xml** layout and put it in the **res/layout** folder
 * Include the **rv_item_book.xml** layout into the **activity_home.xml** layout
+* Given that the user taps on the CardView container the HomeActivity should be closed and the user should be redirected to the LoginActivity
+
 
 ## License
 * Copyright 2019 © Dominik Košćica.
