@@ -1,72 +1,52 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/?s=50)
 
-# Lab 3
-Goal of this lab is to introduce Snackbars, Activity Lifecycles, Intents and CardView.
+# Lab 4
+Goal of this lab is to introduce Intents with complex objects and the RecyclerView.
 
-## 1. Update LoginActivity
-Goal of this task is to replace the Toast message with a Snackbar. Open a webpage with an Intent object and store the form values during rotation changes.</br>
-The max point value for this task is **2 point**.
-
-### Documentation
-* https://developer.android.com/training/snackbar
-* https://developer.android.com/guide/components/activities/activity-lifecycle
-
-### Requirements
-* Given that the user has entered invalid credentials a **Snackbar** should be shown instead of the **Toast** message. Credentials are considered invalid if the email & password format is invalid.
-* Given that the user clicks on the vvg.hr open the VVG website with an **Intent**. The website link and **TextView** text must be accessed through **strings.xml** and the values must be stored in both localizations.
-* Given that the user has rotated his device the email & password values should be stored in the Activity state with the help of **onSaveInstanceState/onRestoreInstanceState** methods. In case of a rotation change the EditText field should persist the entered value.
-
-## 2. HomeActivity
-Goal of this task is to create a new HomeActivity and open the HomeActivity on successful login.</br>
+## 1. BookDetailsActivity
+Goal of this task is to create a new **BookDetailsActivity** and open the **BookDetailsActivity** on the book item click in the **HomeActivity**.</br>
 The max point value for this task is **1 point**.
 
-### Requirements
-* Add a new Activity with the name **HomeActivity** within the screen package.
-* Check if the HomeActivity is listed in the **AndroidManifest.xml**, if it's not you have to add it manualy.
-* Given that the user has clicked on the Login button and entered valid credentials the user should be redirected to the **HomeActivity**. Credentials are considered valid if the email & password format is valid.
+### Lecture
+* [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
 
-## 3. BookRepository
-Goal of this task is to add the Book model to the project and implement the BookRepository.</br>
-The max point value for this task is **1 points**.
+### Documentation
+* https://www.vogella.com/tutorials/JavaSerialization/article.html
 
 ### Requirements
-* Create a new package with the name **model** and create a new Java class with the name **Book** within the **model** package. Getters & Setters must be used. For the implementation details refer to the UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
-* Create a new package with the name **repository** and create a new Java class with the name **BookRepository** within the **repository** package.
-* Add the following code snippet to the **BookRepository** class
-    ```java
-    public class BookRepository {
+* Add the **Serializable** interface to the **Book** model
+* Given that the user clicks on the book item in the **HomeActivity** the user should be redirected to the **BookDetailsActivity**
+* The intent which is used to start the **BookDetailsActivity** should contain an instance of the **Book** object
+* The **openBookDetails(Book book)** method should be used to implement the required intent and start the **BookDetailsActivity**
 
-        private List<Book> books;
-
-        public BookRepository() {
-            books = new ArrayList<>();
-            books.add(new Book("Head First Android Development", "Dawn Griffiths ", 2017, 45.0));
-            books.add(new Book("Android Studio 3.0 Development Essentials - Android 8 Edition", "Neil Smyth", 2017, 50.0));
-            books.add(new Book("Android Programming: The Big Nerd Ranch Guide (3rd Edition)", "Bill Phillips, Chris Stewart, and Kristin Marsicano", 2017, 55.0));
-        }
-
-        public List<Book> getBooks() {
-            return books;
-        }
-    }
-    ```
-
-## 3. Implement HomeActivity design
-Goal of this task is to implement the HomeScreen design.</br>
-The max point value for this task is **1 points**.
+## 2. RecyclerView
+Goal of this task is to implement the BookRecyclerViewAdapter</br>
+The max point value for this task is **3 points**.
 
 <img src="HomeScreenDesign.png" width="540" height="960">
 
+### Lecture
+* [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
+* [RecyclerView](https://drive.google.com/file/d/12fxsNsj3pZ9_1ukdMV8gLTyzDzT9bAHa/view)
+
 ### Documentation
-* https://developer.android.com/guide/topics/ui/layout/cardview
+* https://developer.android.com/guide/topics/ui/layout/recyclerview
 
 ### Requirements
-* Implement the required design, **CardView** must be used!
-* Use the first item of the BookRepository items list to setup the view
-* Extract the **CardView** layout to a separate **rv_item_book.xml** layout and put it in the **res/layout** folder
-* Include the **rv_item_book.xml** layout into the **activity_home.xml** layout
-* Given that the user taps on the CardView container the HomeActivity should be closed and the user should be redirected to the LoginActivity
+* Create a new package with the name **home** and create a new Java class with the name **BookRecyclerViewAdapter** within the **screen** package.
+* Drag and drop the **HomeActivity** file to the **home** package. The **home** package should contain the **HomeActivity** and **BookRecyclerViewAdapter** files.
+* Implement the **BookRecyclerViewAdapter** and reuse the **rv_item_book.xml** layout.
+* Given that the user clicks on the RecylcerView item the user should be redirected to the **BookDetailsActivity**. Use the **openBookDetails(Book book)** method to redirect the user to the **BookDetailsActivity**
 
+## 3. Basic BookDetailsActivity design
+Goal of this task is to implement a basic BookDetailsActivity design.</br>
+The max point value for this task is **1 point**.
+
+### Lecture
+* [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
+
+### Requirements
+* Retrive the book model from the **Intent bundle** and use the received Book model to implement your basic design to display all relevant information about the received Book model. Feel free to use any layout and View, it's only mandatory that all Book model variables are displayed on the **BookDetailsActivity**.
 
 ## License
 * Copyright 2019 © Dominik Košćica.

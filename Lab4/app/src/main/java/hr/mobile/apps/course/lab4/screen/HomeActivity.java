@@ -37,4 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         costTextView.setText(String.valueOf("$" + book.getCost()));
     }
 
+    private void openBookDetails(Book book) {
+
+    }
 }
