@@ -22,6 +22,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Android Resources](https://drive.google.com/file/d/1kLeyrh6rzx89Z9Bd2rDkjmL_SyM57-Me/view)
 - [Activity](https://drive.google.com/file/d/1DhfYTitWSgDcMgUQCbfxluFDoYS8aUiG/view)
 - [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
+- [RecyclerView](https://drive.google.com/file/d/12fxsNsj3pZ9_1ukdMV8gLTyzDzT9bAHa/view)
 
 ## Design
 - [Material Design](https://material.io/design/)
