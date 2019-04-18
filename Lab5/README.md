@@ -11,9 +11,6 @@ The max point value for this task is **1 point**.
 * [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
 * [Fragments](https://drive.google.com/file/d/1dbock4krogYRd9kmfzTyiWqQl4uZCVBw/view)
 
-### Documentation
-* https://www.vogella.com/tutorials/JavaSerialization/article.html
-
 ### Requirements
 * Remove the **Serializable** interface from the **Book** model, **the Serializable interface was used only for demonstration purposes and should not be used in production code!** For more details read the following article: https://android.jlelse.eu/parcelable-vs-serializable-6a2556d51538
 * Expend the Book model regarding the following UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
@@ -40,7 +37,6 @@ The max point value for this task is **2 points**.
     * Override the **onCreate** method to create an instance of the **BookRepository**
     * Override the **onCreateView** method to inflate the **fragment_rv_book.xml**
     * Override the **onViewCreated** method to setup the **RecyclerView**
-
 * Use the **attachFragment(FragmentManager fragmentManager, int containerViewId, Fragment fragment)** method from the **FragmentUtil** class to attach the **BookRVFragment** to the **HomeActivity**
 * Given that the user clicks on the RecylcerView item the user should be redirected to the **BookDetailsActivity**. Use the **openBookDetails(long id)** method to redirect the user to the **BookDetailsActivity**
 
@@ -59,15 +55,15 @@ The max point value for this task is **2 points**.
 * Create a new Java class with the name **BookDetailsFragment** within the **screen/bookdetails** package.
 * Implement the **BookDetailsFragment**
     * Add the following code snippet to the **BookDetailsFragment** and use the **newInstance(long bookId)** method to create a new instance of the **BookDetailsFragment**
-        ```java
-            public static BookDetailsFragment newInstance(long bookId) {
-                BookDetailsFragment fragment = new BookDetailsFragment();
-                Bundle bundle = new Bundle();
-                bundle.putLong(BOOK_ID, bookId);
-                fragment.setArguments(bundle);
-                return fragment;
-            }
-        ```
+      ```java
+      public static BookDetailsFragment newInstance(long bookId) {
+         BookDetailsFragment fragment = new BookDetailsFragment();
+         Bundle bundle = new Bundle();
+         bundle.putLong(BOOK_ID, bookId);
+         fragment.setArguments(bundle);
+         return fragment;
+      }
+      ```
     * Override the **onCreate** method to create an instance of the **BookRepository** and retrive the **bookId** from the Fragment arguments
     * Override the **onCreateView** method to inflate the **fragment_book_details.xml**
     * Override the **onViewCreated** method to setup the **CardView**
