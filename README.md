@@ -23,6 +23,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Activity](https://drive.google.com/file/d/1DhfYTitWSgDcMgUQCbfxluFDoYS8aUiG/view)
 - [Intents](https://drive.google.com/file/d/1PnqYaTrP2rdr8m3DngencTxkG9P3Epes/view)
 - [RecyclerView](https://drive.google.com/file/d/12fxsNsj3pZ9_1ukdMV8gLTyzDzT9bAHa/view)
+- [Fragments](https://drive.google.com/file/d/1dbock4krogYRd9kmfzTyiWqQl4uZCVBw/view)
 
 ## Design
 - [Material Design](https://material.io/design/)
