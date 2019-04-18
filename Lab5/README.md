@@ -13,7 +13,7 @@ The max point value for this task is **1 point**.
 
 ### Requirements
 * Remove the **Serializable** interface from the **Book** model, **the Serializable interface was used only for demonstration purposes and should not be used in production code!** For more details read the following article: https://android.jlelse.eu/parcelable-vs-serializable-6a2556d51538
-* Expend the Book model regarding the following UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
+* Extend the Book model regarding the following UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view?usp=sharing
 * Implement the **findBookById(long id)** method in the **BookRepository**. The method should return a Book object if the books list contains a book with the passed id, if not return **null**.
 * Refactor the **openBookDetails(Book book)** method. The book **id** should be used instead of the book object.
 * Refactor and adjust the **BookDetailsActivity** bundle retrieval logic. The book **id** should be used instead of the book object.
