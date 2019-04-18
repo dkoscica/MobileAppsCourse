@@ -54,16 +54,7 @@ The max point value for this task is **2 points**.
 * Create a **fragment_book_details.xml** layout and put it in the **res/layout** folder
 * Create a new Java class with the name **BookDetailsFragment** within the **screen/bookdetails** package.
 * Implement the **BookDetailsFragment**
-    * Add the following code snippet to the **BookDetailsFragment** and use the **newInstance(long bookId)** method to create a new instance of the **BookDetailsFragment**
-      ```java
-      public static BookDetailsFragment newInstance(long bookId) {
-         BookDetailsFragment fragment = new BookDetailsFragment();
-         Bundle bundle = new Bundle();
-         bundle.putLong(BOOK_ID, bookId);
-         fragment.setArguments(bundle);
-         return fragment;
-      }
-      ```
+    * Add and implement the **public static BookDetailsFragment newInstance(long bookId)** method in **BookDetailsFragment** and use it to create a new instance of the **BookDetailsFragment**
     * Override the **onCreate** method to create an instance of the **BookRepository** and retrive the **bookId** from the Fragment arguments
     * Override the **onCreateView** method to inflate the **fragment_book_details.xml**
     * Override the **onViewCreated** method to setup the **CardView**
