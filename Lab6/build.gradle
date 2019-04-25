@@ -1,5 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+ext {
+
+    // defaultConfig
+    minSdkVersion = 23
+    //TODO add all remaining config parameters
+
+    // dependencies
+    appCompatVersion = '1.1.0-alpha04'
+    //TODO add all remaining dependency versions
+
+}
+
+
 buildscript {
     repositories {
         google()

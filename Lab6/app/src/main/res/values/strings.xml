@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab5</string>
+    <string name="app_name">Lab6</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="error_email">Invalid email format!</string>
