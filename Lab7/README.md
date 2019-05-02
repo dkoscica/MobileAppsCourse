@@ -46,7 +46,8 @@ The max point value for this task is **2 point**.
 
 ### Requirements
 * Create a **BookDetailsViewModel** class within the **screen/bookdetails** package
-* The **BookDetailsViewModel** must implement **MutableLiveData<Book> getBookById(long id)** method
+* The **BookDetailsViewModel** must implement **
+<Book> getBookById(long id)** method
 * The **MutableLiveData<Book> getBookById(long id)** method should use an instance of the **BookRepository** to find the book by id
 * Create an **BookDetailsViewModel** instance within the **BookDetailsFragment**
 * Use the **getBookById(long id)** method from the **BookDetailsViewModel** instance to **setupCardView(View view, Book book)**
