@@ -28,11 +28,8 @@ The max point value for this task is **2 points**.
 ### Lecture
 * [Permissions](https://drive.google.com/file/d/17-nT-uGNBkXlTOpmwbIC-metlTNfFSnE/view)
 
-### Documentation
-* https://developer.android.com/guide/components/fragments
-
 ### Requirements
-* Request a runtime write permission **WRITE_EXTERNAL_STORAGE** within the **onCreate()** method of HomeActivity.
+* Request a runtime write permission **WRITE_EXTERNAL_STORAGE** within the **onCreate()** method of HomeActivity
 * Given that the user has already granted the write permission show a **Snackbar** message
 * Given that the user has denied or the permission is not known, explicitly ask the user for the **WRITE_EXTERNAL_STORAGE** permission.
 
@@ -50,7 +47,7 @@ The max point value for this task is **1 points**.
 * Complete the **ext{}** with the following configurations and dependency versions
     * applicationId
     * targetSdkVersion
-    * constraintlayoutVersion
+    * constraintLayoutVersion
     * materialVersion
     * cardViewVersion
     * recyclerview
