@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".screen.HomeActivity" />-->
-        <activity android:name="hr.mobile.apps.course.lab7.screen.home.HomeActivity">
+        <activity android:name=".screen.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="hr.mobile.apps.course.lab7.screen.bookdetails.BookDetailsActivity"></activity>
+        <activity android:name=".screen.home.HomeActivity" />
+        <activity android:name=".screen.bookdetails.BookDetailsActivity"></activity>
     </application>
 
 </manifest>

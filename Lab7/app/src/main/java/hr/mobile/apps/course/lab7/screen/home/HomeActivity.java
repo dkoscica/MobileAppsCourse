@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import hr.mobile.apps.course.lab7.R;
+import hr.mobile.apps.course.lab7.screen.home.fragment.BookRVFragment;
 import hr.mobile.apps.course.lab7.util.FragmentUtil;
 
 public class HomeActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package hr.mobile.apps.course.lab7.screen;
+package hr.mobile.apps.course.lab7.screen.login;
 
 import android.content.Intent;
 import android.net.Uri;

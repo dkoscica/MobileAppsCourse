@@ -17,7 +17,7 @@ import com.bumptech.glide.Glide;
 import hr.mobile.apps.course.lab7.R;
 import hr.mobile.apps.course.lab7.model.Book;
 import hr.mobile.apps.course.lab7.repository.BookRepository;
-import hr.mobile.apps.course.lab7.screen.home.BookRVFragment;
+import hr.mobile.apps.course.lab7.screen.home.fragment.BookRVFragment;
 import hr.mobile.apps.course.lab7.util.FragmentUtil;
 
 public class BookDetailsFragment extends Fragment {
@@ -41,7 +41,7 @@ public class BookDetailsFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bookRepository = new BookRepository();
+        bookRepository = BookRepository.getInstance();
         if (getArguments() != null) {
             bookId = getArguments().getLong(BOOK_ID);
         }

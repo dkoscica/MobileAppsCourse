@@ -1,4 +1,4 @@
-package hr.mobile.apps.course.lab7.screen.home;
+package hr.mobile.apps.course.lab7.screen.home.fragment;
 
 
 import android.view.LayoutInflater;
