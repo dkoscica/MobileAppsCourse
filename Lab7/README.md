@@ -30,7 +30,7 @@ The max point value for this task is **3 point**.
 * The **MutableLiveData<User> login(String email, String password)** method should check if the provided email and password match the **Mock.Credentials**. If they match return the **Mock user object**, if not return **null**
 * Create a **LoginViewModel** class within the **login** package
 * The **LoginViewModel** must implement the **MutableLiveData<User> loginUser(String username, String password)** method
-* The **MutableLiveData<User> loginUser(String username, String password)** method must use an instance of the **AuthInteractorMockImpl** class to login the user
+* The **MutableLiveData<User> login(String username, String password)** method must use an instance of the **AuthInteractorMockImpl** class to login the user
 * Create an **LoginViewModel** instance within the **LoginActivity**
     * Given that the user has entered credentials that match the Mock credentials show a Toast message and redirect the user to the HomeActivity.
     * Given that the user has entered invalid credentials. Invalid credentials are all credentials that don't match the Mock credentials use the **showInvalidCredentialsMessage** to show an error message.
