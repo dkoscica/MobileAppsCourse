@@ -8,11 +8,12 @@ Goal of this task is to implement the LoginViewModel.</br>
 The max point value for this task is **3 point**.
 
 ### Lecture
-* [Android Architecture](https://drive.google.com/file/d/1hPivQ6oml_M3N15WaX21iMzht67FIzzZ/view)
+* [Android Architectures](https://drive.google.com/file/d/1Lk9U09fHvpyffWBKiu-vD-aQIRpmb9ai/view)
 ### Documentation
 * https://developer.android.com/jetpack/docs/guide
 
 ### Requirements
+* **Read carefully the following documentation till the Fetch data section:** https://developer.android.com/jetpack/docs/guide
 * Create a new **config** package and add a java class with the name **Mock** within the config package.
 * Add the following code snippet to the **Mock** class
     ```java
@@ -39,7 +40,7 @@ Goal of this task is to implement the BookDetailsViewModel.</br>
 The max point value for this task is **2 point**.
 
 ### Lecture
-* [Android Architecture](https://drive.google.com/file/d/1hPivQ6oml_M3N15WaX21iMzht67FIzzZ/view)
+* [Android Architectures](https://drive.google.com/file/d/1Lk9U09fHvpyffWBKiu-vD-aQIRpmb9ai/view)
 ### Documentation
 * https://developer.android.com/jetpack/docs/guide
 
