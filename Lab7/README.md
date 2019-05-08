@@ -27,10 +27,10 @@ The max point value for this task is **3 point**.
 * Add a **public static final User USER** instance to the Mock class within the **config** package. Use the **Credentials.EMAIL** and **Credentials.TOKEN** to create the instance.
 * Create a **AuthInteractorMockImpl** class within the **interactors** package.
 * Implement the **AuthInteractor** interface within the **AuthInteractorMockImpl** class
-* The **MutableLiveData<User> login(String email, String password)** method should check if the provided email and password match the **Mock.Credentials**. If they match return the **Mock user object**, if not return **null**
+* The **MutableLiveData\<User> login(String email, String password)** method should check if the provided email and password match the **Mock.Credentials**. If they match return the **Mock user object**, if not return **null**
 * Create a **LoginViewModel** class within the **login** package
-* The **LoginViewModel** must implement the **MutableLiveData<User> login(String username, String password)** method
-* The **MutableLiveData<User> login(String username, String password)** method must use an instance of the **AuthInteractorMockImpl** class to login the user
+* The **LoginViewModel** must implement the **MutableLiveData\<User> login(String username, String password)** method
+* The **MutableLiveData\<User> login(String username, String password)** method must use an instance of the **AuthInteractorMockImpl** class to login the user
 * Create an **LoginViewModel** instance within the **LoginActivity**
     * Given that the user has entered credentials that match the Mock credentials show a Toast message and redirect the user to the HomeActivity.
     * Given that the user has entered invalid credentials. Invalid credentials are all credentials that don't match the Mock credentials use the **showInvalidCredentialsMessage** to show an error message.
@@ -46,9 +46,8 @@ The max point value for this task is **2 point**.
 
 ### Requirements
 * Create a **BookDetailsViewModel** class within the **screen/bookdetails** package
-* The **BookDetailsViewModel** must implement **
-<Book> getBookById(long id)** method
-* The **MutableLiveData<Book> getBookById(long id)** method should use an instance of the **BookRepository** to find the book by id
+* The **BookDetailsViewModel** must implement **MutableLiveData\<Book> getBookById(long id)** method
+* The **MutableLiveData\<Book> getBookById(long id)** method should use an instance of the **BookRepository** to find the book by id
 * Create an **BookDetailsViewModel** instance within the **BookDetailsFragment**
 * Use the **getBookById(long id)** method from the **BookDetailsViewModel** instance to **setupCardView(View view, Book book)**
 
