@@ -14,7 +14,6 @@ This repository contains projects used for teaching purposes and, as such, sourc
 
 ## Lectures
 - [Introduction](https://drive.google.com/file/d/1GGI3eorrtkV2T7eT3INalHwVrLvhI4CU/view)
-- [Lab Scoring](https://drive.google.com/file/d/1-g0cUngsovRBfbFCHTFRbG45WUiKqC4U/view)
 - [Introduction to Android](https://drive.google.com/file/d/13ssc9zkdFF1GZD8FzkgJyqbhaKFutir6/view)
 - [Git](https://drive.google.com/file/d/1upElV6Dig-TgPJhM43zDO0XtOF8hF0-0/view)
 - [Anatomy of Android App](https://drive.google.com/file/d/1jHADFUweUU99wLyOI6p48E0SuaSyebmn/view)
@@ -26,6 +25,8 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Fragments](https://drive.google.com/file/d/1dbock4krogYRd9kmfzTyiWqQl4uZCVBw/view)
 - [Gradle](https://drive.google.com/file/d/1hPivQ6oml_M3N15WaX21iMzht67FIzzZ/view)
 - [Permissions](https://drive.google.com/file/d/17-nT-uGNBkXlTOpmwbIC-metlTNfFSnE/view)
+- [Android Architectures](https://drive.google.com/file/d/1Lk9U09fHvpyffWBKiu-vD-aQIRpmb9ai/view)
+- [Multithreading](https://drive.google.com/file/d/1jw2LpuoUQDfyV_--AQJyokFiMREODXn7/view)
 
 ## Design
 - [Material Design](https://material.io/design/)
