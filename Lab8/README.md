@@ -119,6 +119,7 @@ The max point value for this task is **1 point**.
 
 ### Requirements
 * Update the **BookDetailsFragment** and implement the required design.
+* **ScrollView** must be used to enable scrolling with the screen.
 * Given that the user clicks on the FAB button show a Snackbar message with the following message format: **"${bookName} added to your book collection!"**. 
 * String formatting must be used to format the message
 
