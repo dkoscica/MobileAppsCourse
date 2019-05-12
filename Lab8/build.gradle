@@ -4,7 +4,7 @@ ext {
 
     // defaultConfig
     compileSdkVersion = 28
-    applicationId = "hr.mobile.apps.course.lab7"
+    applicationId = "hr.mobile.apps.course.lab8"
     minSdkVersion = 23
     targetSdkVersion = 28
 

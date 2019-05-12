@@ -17,7 +17,6 @@ import com.bumptech.glide.Glide;
 
 import hr.mobile.apps.course.lab8.R;
 import hr.mobile.apps.course.lab8.model.Book;
-import hr.mobile.apps.course.lab8.repository.BookRepository;
 import hr.mobile.apps.course.lab8.screen.home.fragment.BookRVFragment;
 import hr.mobile.apps.course.lab8.util.FragmentUtil;
 
@@ -33,7 +32,6 @@ public class BookDetailsFragment extends Fragment {
         return fragment;
     }
 
-    private BookRepository bookRepository;
     private BookDetailsViewModel bookDetailsViewModel;
     private long bookId;
 
@@ -43,7 +41,6 @@ public class BookDetailsFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bookRepository = BookRepository.getInstance();
         bookDetailsViewModel = ViewModelProviders.of(this).get(BookDetailsViewModel.class);
         if (getArguments() != null) {
             bookId = getArguments().getLong(BOOK_ID);
@@ -59,10 +56,10 @@ public class BookDetailsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        bookDetailsViewModel.getBookById(bookId).observe(this, book -> setupCardView(view, book));
+        bookDetailsViewModel.getBookById(bookId).observe(this, book -> setupView(view, book));
     }
 
-    private void setupCardView(View view, Book book) {
+    private void setupView(View view, Book book) {
         CardView bookRecyclerViewItem = view.findViewById(R.id.bookRecyclerViewItem);
         bookRecyclerViewItem.setOnClickListener(v -> replaceWithBookRVFragment());
 

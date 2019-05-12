@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab7</string>
+    <string name="app_name">Lab8</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Lozinka</string>
     <string name="error_email">Neispravan email format!</string>
