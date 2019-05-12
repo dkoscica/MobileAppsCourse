@@ -1,11 +1,11 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/?s=50)
 
 # Lab 8
-Goal of this lab is to introduce MultiThreading in Android.
+Goal of this lab is to introduce Multithreading in Android.
 
 ## Prerequisites
 * Use the **git pull origin master** command to pull the latest changes
-* Start using the Android Studio built in formatter. Each file that is modified or created must be formatted with the built in formatter: https://medium.com/mindorks/11-android-studio-shortcuts-every-android-developer-must-know-a153e736e611
+* Start using the Android Studio built in formatter. Each file that is modified or created **must** be formatted with the built in formatter: https://medium.com/mindorks/11-android-studio-shortcuts-every-android-developer-must-know-a153e736e611
 
 ## 1. SplashScreen
 Goal of this task is to implement the SplashScreen.</br>
