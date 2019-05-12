@@ -39,12 +39,33 @@ The max point value for this task is **1 point**.
 * Given that the **splashViewModel.retrieveToken().observe** method call returns a empty or null String redirect the user to the **LoginActivity** with the help of **startWithClearTask** method within the **IntentUtil** class. 
 * Given that the **splashViewModel.retrieveToken().observe** method call returns a token (not null or empty) redirect the user to the **HomeActivity** with the help of **startWithClearTask** method within the **IntentUtil** class. 
 
-## 2. Update models, BookRVFragment and BookRecyclerViewAdapter
-Goal of this task is to update the app models and BookRVFragment, BookRecyclerViewAdapter classes</br>
+## 2. LoginScreen
+Goal of this task is to update the LoginScreen design and to fake an API call delay.</br>
 The max point value for this task is **1 point**.
 
+### Lecture
+* [Multithreading](https://drive.google.com/file/d/1jw2LpuoUQDfyV_--AQJyokFiMREODXn7/view)
+
+### Documentation
+* https://developer.android.com/guide/components/processes-and-threads
+* https://developer.android.com/reference/java/lang/Thread
+
 ### Design
-<img src="HomeScreenDesign_2.png" width="240" height="480">
+<img src="LoginScreenDesign_3.png" width="240" height="480">
+
+### Requirements
+* Implement the required design. Use **androidx.core.widget.ContentLoadingProgressBar** component to display a progress indicator.
+* The progress bar should be shown before the **loginViewModel.loginUser(email, password).observe** method is called.
+* The progress bar should be hidden after the **loginViewModel.loginUser(email, password).observe** has been called.
+* Add the following code snippet to the **AuthInteractorMockImpl** class
+    ```java 
+    private static final int DELAY_IN_MS = 2000;
+    ``` 
+* Modify the **MutableLiveData<User> login(String email, String password)** method within the **AuthInteractorMockImpl**. Use the **Thread** class to fake a long running network call. Use the **DELAY_IN_MS** constant to set a specific delay value.
+
+## 3. Update models
+Goal of this task is to update the app models</br>
+The max point value for this task is **1 point**.
 
 * Implement the **Book** class regarding the following UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view
 * Create a new **Publisher** class within the **model** package and implement the **Publisher** class regarding the following UML diagram: https://drive.google.com/file/d/1_Bh0xYxwjIBzYgB9c5GszN5E_B0FksGB/view
@@ -81,33 +102,18 @@ The max point value for this task is **1 point**.
     }};
     ``` 
 * Use the **Mock.BOOKS** within **BookRepository** **setupRepository** method.
-* Update the **BookRVFragment**, **BookRecyclerViewAdapter** classes and implement the required design.
 
-## 3. LoginScreen
-Goal of this task is to update the LoginScreen design and to fake an API call delay.</br>
-The max point value for this task is **2 point**.
-
-### Lecture
-* [Multithreading](https://drive.google.com/file/d/1jw2LpuoUQDfyV_--AQJyokFiMREODXn7/view)
-
-### Documentation
-* https://developer.android.com/guide/components/processes-and-threads
-* https://developer.android.com/reference/java/lang/Thread
+## 4. Update BookRVFragment and BookRecyclerViewAdapter
+Goal of this task is to update the BookRVFragment, BookRecyclerViewAdapter classes</br>
+The max point value for this task is **1 point**.
 
 ### Design
-<img src="LoginScreenDesign_3.png" width="240" height="480">
+<img src="HomeScreenDesign_2.png" width="240" height="480">
 
 ### Requirements
-* Implement the required design. Use **androidx.core.widget.ContentLoadingProgressBar** component to display a progress indicator.
-* The progress bar should be shown before the **loginViewModel.loginUser(email, password).observe** method is called.
-* The progress bar should be hidden after the **loginViewModel.loginUser(email, password).observe** has been called.
-* Add the following code snippet to the **AuthInteractorMockImpl** class
-    ```java 
-    private static final int DELAY_IN_MS = 2000;
-    ``` 
-* Modify the **MutableLiveData<User> login(String email, String password)** method within the **AuthInteractorMockImpl**. Use the **Thread** class to fake a long running network call. Use the **DELAY_IN_MS** constant to set a specific delay value.
+* Update the **BookRVFragment**, **BookRecyclerViewAdapter** classes and implement the required design.
 
-## 4. BookDetailsScreen
+## 5. BookDetailsScreen
 Goal of this task is to implement the BookDetailsScreen design.</br>
 The max point value for this task is **1 point**.
 
