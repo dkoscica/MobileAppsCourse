@@ -61,7 +61,7 @@ The max point value for this task is **1 point**.
     ```java 
     private static final int DELAY_IN_MS = 2000;
     ``` 
-* Modify the **MutableLiveData<User> login(String email, String password)** method within the **AuthInteractorMockImpl**. Use the **Thread** class to fake a long running network call. Use the **DELAY_IN_MS** constant to set a specific delay value.
+* Modify the **MutableLiveData\<User> login(String email, String password)** method within the **AuthInteractorMockImpl**. Use the **Thread** class to fake a long running network call. Use the **DELAY_IN_MS** constant to set a specific delay value.
 
 ## 3. Update models
 Goal of this task is to update the app models</br>
