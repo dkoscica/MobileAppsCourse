@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Lozinka</string>
+    <string name="error_email">Neispravan email format!</string>
+    <string name="error_password">Neispravan format lozinke!</string>
+    <string name="error_invalid_credentials">Neispravan korisnički račun ili lozinka!"</string>
+    <string name="label_login">Prijava</string>
+    <string name="label_university_website">vvg.hr</string>
+    <string name="url_university_website">https://www.vvg.hr</string>
+    <string name="book_added_message">%1$s dodana u vašu zbirku knjiga!</string>
+</resources>
