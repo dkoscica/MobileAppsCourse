@@ -41,18 +41,18 @@ The max point value for this task is **1 point**.
 * Read the following article: https://medium.com/@son.rommer/fix-cleartext-traffic-error-in-android-9-pie-2f4e9e2235e6 and fix the Cleartext Traffic Error in Android 9 Pie. Use the **useCleartextTraffic** attribute method in the **AndroidManifest** to fix the issue.
 
 ## 3. Token validation - POST ValidateToken
-Goal of this task is to implement the validateToken Retrofit call</br>
+Goal of this task is to implement the validateToken Retrofit call.</br>
 The max point value for this task is **1 point**.
 
 * Open **Postman** and take a look at the **POST ValidateToken** method.
-* Add the **Call<TokenResponse> validateToken();** method to the **AuthService** interface within **network/services** package.
-* Add a corresponding Retrofit annotation to the **Call<TokenResponse> validateToken();** method.
+* Add the **Call\<TokenResponse> validateToken();** method to the **AuthService** interface within **network/services** package
+* Add a corresponding Retrofit annotation to the **Call\<TokenResponse> validateToken();** method.
 * Replace the
     ```java
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **SplashViewModel** class.
-* Implement the **LiveData/<User> validateToken()** method within the **AuthInteractorImpl** class.
+* Implement the **LiveData\<User> validateToken()** method within the **AuthInteractorImpl** class.
 * Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a User object, the app user should be redirected to the **HomeActivity**
 * Given that your receive a invalid response, error or the response doesn't contain a User object, the app user should be redirected to the **LoginActivity**
@@ -63,14 +63,15 @@ The max point value for this task is **1 point**.
 
 * Open **Postman** and take a look at the **POST Login** method.
 * Currently only the following credentials will return a valid token: **email: admin@app.com password: password**
-* Add the **Call<LoginResponse> login(@Body LoginRequest loginRequest);** method to the **AuthService** interface within **network/services** package.
-* Add a corresponding Retrofit annotation to the **Call<LoginResponse> login(@Body LoginRequest loginRequest);** method.
+* According to the **Postman** **POST Login** response implement the **LoginData** class
+* Add the **Call\<LoginResponse> login(@Body LoginRequest loginRequest);** method to the **AuthService** interface within **network/services** package.
+* Add a corresponding Retrofit annotation to the **Call\<LoginResponse> login(@Body LoginRequest loginRequest);** method.
 * Replace the
     ```java
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **LoginViewModel** class.
-* Implement the **LiveData<String> login(String email, String password)** method within the **AuthInteractorImpl** class.
+* Implement the **LiveData\<String> login(String email, String password)** method within the **AuthInteractorImpl** class.
 * Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a token, store the token with the help of the **SessionManager** class and redirect the user to the **HomeActivity**
     ```java
@@ -78,13 +79,13 @@ The max point value for this task is **1 point**.
     ```
 
 ## 5. GET Books
-Goal of this task is to implement the GET Books Retrofit call</br>
+Goal of this task is to implement the GET Books Retrofit call.</br>
 The max point value for this task is **1 point**.
 
 * Open **Postman** and take a look at the **GET BOOKS** method.
-* Add the **Call<BookResponse> getBooks()** method to the **BookService** interface within **network/services** package.
-* Add a corresponding Retrofit annotation to the **Call<BookResponse> getBooks()** method.
-* Implement the **MutableLiveData<List<Book>> getBooks()** method within the **BookRepository** class.
+* Add the **Call\<BookResponse> getBooks()** method to the **BookService** interface within **network/services** package.
+* Add a corresponding Retrofit annotation to the **Call\<BookResponse> getBooks()** method.
+* Implement the **MutableLiveData<List\<Book>> getBooks()** method within the **BookRepository** class.
 * Use the **BookService** to create a Retrofit network call
 
 ## License
