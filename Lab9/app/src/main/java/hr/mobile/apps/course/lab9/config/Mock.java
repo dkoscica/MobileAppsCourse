@@ -15,7 +15,7 @@ public class Mock {
         public static final String TOKEN = "EvNElvTOZvi1fnczpuVR77dQT3GlKkjtaRSFZmEo";
     }
 
-    public static final User USER = new User(Credentials.EMAIL, Credentials.TOKEN);
+    public static final User USER = new User(1, "Kariane", "Gibson", "admin@app.com", true);
 
     public static final List<Book> BOOKS = new ArrayList<Book>() {{
         add(new Book(1,

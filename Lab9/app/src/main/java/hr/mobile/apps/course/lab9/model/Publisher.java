@@ -1,9 +1,15 @@
 package hr.mobile.apps.course.lab9.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Publisher {
     private long id;
     private String name;
+
+    @SerializedName("created_at")
     private String createdAt;
+
+    @SerializedName("updated_at")
     private String updateAt;
 
     public Publisher(long id, String name, String createdAt, String updateAt) {

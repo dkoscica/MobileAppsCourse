@@ -1,5 +1,7 @@
 package hr.mobile.apps.course.lab9.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Book {
@@ -8,13 +10,23 @@ public class Book {
     private String title;
     private long publisherId;
     private int pages;
+
+    @SerializedName("publication_date")
     private String publicationDate;
+
+    @SerializedName("book_rate")
     private double bookRate;
     private long isbn13;
+
+    @SerializedName("bestseller_rank")
     private int bestsellerRank;
     private String image;
     private String description;
+
+    @SerializedName("created_at")
     private String createdAt;
+
+    @SerializedName("updated_at")
     private String updatedAt;
     private List<String> tags;
     private List<String> genres;

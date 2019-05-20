@@ -1,5 +1,6 @@
 package hr.mobile.apps.course.lab9.interactors;
 
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import hr.mobile.apps.course.lab9.config.Mock;
@@ -9,34 +10,34 @@ public class AuthInteractorMockImpl implements AuthInteractor {
 
     private static final int DELAY_IN_MS = 2000;
 
-    private MutableLiveData<User> liveDataUser;
-    private MutableLiveData<String> liveDataToken;
+    private MutableLiveData<User> userLiveData;
+    private MutableLiveData<String> tokenLiveData;
 
     public AuthInteractorMockImpl() {
-        liveDataUser = new MutableLiveData<>();
-        liveDataToken = new MutableLiveData<>();
+        userLiveData = new MutableLiveData<>();
+        tokenLiveData = new MutableLiveData<>();
     }
 
-    public MutableLiveData<User> login(String email, String password) {
+    public LiveData<User> validateToken() {
+        userLiveData.setValue(Mock.USER);
+        return userLiveData;
+    }
+
+    public LiveData<String> login(String email, String password) {
         new Thread(() -> {
             try {
                 Thread.sleep(DELAY_IN_MS);
                 if (email.equals(Mock.Credentials.EMAIL) && password.equals(Mock.Credentials.PASSWORD)) {
-                    liveDataUser.postValue(Mock.USER);
+                    tokenLiveData.postValue(Mock.Credentials.TOKEN);
                     return;
                 }
-                liveDataUser.postValue(null);
+                tokenLiveData.postValue(null);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
         }).start();
-        return liveDataUser;
-    }
-
-    public MutableLiveData<String> retrieveToken() {
-        liveDataToken.setValue(Mock.Credentials.TOKEN);
-        return liveDataToken;
+        return tokenLiveData;
     }
 
 }

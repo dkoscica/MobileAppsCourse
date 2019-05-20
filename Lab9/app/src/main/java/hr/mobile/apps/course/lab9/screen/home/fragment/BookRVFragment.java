@@ -13,8 +13,6 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.List;
 
 import hr.mobile.apps.course.lab9.R;
@@ -41,23 +39,14 @@ public class BookRVFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setupView(view);
-        setupRecyclerView(view, bookRVViewModel.getBooks().getValue());
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        bookRVViewModel.getBooks().observe(this, books -> bookRecyclerViewAdapter.notifyDataSetChanged());
+        bookRVViewModel.getBooks().observe(this, books ->
+                setupRecyclerView(view, books)
+        );
     }
 
     /**
      * Private methods
      */
-    private void setupView(View fragmentView) {
-        FloatingActionButton addBookFab = fragmentView.findViewById(R.id.addBookFab);
-        addBookFab.setOnClickListener(view -> bookRVViewModel.addRandomBook());
-    }
 
     private void setupRecyclerView(View fragmentView, List<Book> books) {
 

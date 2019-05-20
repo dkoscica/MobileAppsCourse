@@ -1,13 +1,50 @@
 package hr.mobile.apps.course.lab9.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class User {
 
-    private String email;
-    private String token;
+    private int id;
 
-    public User(String email, String token) {
+    @SerializedName("first_name")
+    private String firstName;
+    @SerializedName("last_name")
+    private String lastName;
+    private String email;
+
+    @SerializedName("is_active")
+    private boolean isActive;
+
+    public User(int id, String firstName, String lastName, String email, boolean isActive) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
-        this.token = token;
+        this.isActive = isActive;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -18,19 +55,11 @@ public class User {
         this.email = email;
     }
 
-    public String getToken() {
-        return token;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "email='" + email + '\'' +
-                ", token='" + token + '\'' +
-                '}';
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }

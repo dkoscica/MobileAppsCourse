@@ -94,13 +94,13 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         loadingProgressBar.setVisibility(View.VISIBLE);
-        loginViewModel.loginUser(email, password).observe(this, user -> {
+        loginViewModel.loginUser(email, password).observe(this, token -> {
             loadingProgressBar.setVisibility(View.INVISIBLE);
-            if (user == null) {
+            if (token == null) {
                 showInvalidCredentialsMessage();
                 return;
             }
-            Toast.makeText(this, user.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, token, Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this, HomeActivity.class));
         });
     }

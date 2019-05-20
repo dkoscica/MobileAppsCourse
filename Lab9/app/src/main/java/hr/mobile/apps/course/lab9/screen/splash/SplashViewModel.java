@@ -5,12 +5,13 @@ import androidx.lifecycle.ViewModel;
 
 import hr.mobile.apps.course.lab9.interactors.AuthInteractor;
 import hr.mobile.apps.course.lab9.interactors.AuthInteractorMockImpl;
+import hr.mobile.apps.course.lab9.model.User;
 
-public class SplashViewModel extends ViewModel {
+class SplashViewModel extends ViewModel {
 
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
 
-    public LiveData<String> retrieveToken() {
-        return authInteractor.retrieveToken();
+    LiveData<User> validateToken() {
+        return authInteractor.validateToken();
     }
 }

@@ -1,10 +1,10 @@
 package hr.mobile.apps.course.lab9.interactors;
 
-import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
 
 import hr.mobile.apps.course.lab9.model.User;
 
 public interface AuthInteractor {
-    MutableLiveData<User> login(String email, String password);
-    MutableLiveData<String> retrieveToken();
+    LiveData<User> validateToken();
+    LiveData<String> login(String email, String password);
 }
