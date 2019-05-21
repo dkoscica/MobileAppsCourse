@@ -52,8 +52,7 @@ The max point value for this task is **1 point**.
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **SplashViewModel** class.
-* Implement the **LiveData\<User> validateToken()** method within the **AuthInteractorImpl** class.
-* Use the **AuthService** to create a Retrofit network call
+* Implement the **LiveData\<User> validateToken()** method within the **AuthInteractorImpl** class. Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a User object, the app user should be redirected to the **HomeActivity**
 * Given that your receive a invalid response, error or the response doesn't contain a User object, the app user should be redirected to the **LoginActivity**
 
@@ -71,8 +70,7 @@ The max point value for this task is **1 point**.
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **LoginViewModel** class.
-* Implement the **LiveData\<String> login(String email, String password)** method within the **AuthInteractorImpl** class.
-* Use the **AuthService** to create a Retrofit network call
+* Implement the **LiveData\<String> login(String email, String password)** method within the **AuthInteractorImpl** class. Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a token, store the token with the help of the **SessionManager** class and redirect the user to the **HomeActivity**
     ```java
     SessionManager.getInstance().setToken(token);
