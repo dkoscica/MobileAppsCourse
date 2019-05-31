@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab10</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="error_email">Invalid email format!</string>
+    <string name="error_password">Invalid password format!</string>
+    <string name="error_invalid_credentials">Invalid username or password!</string>
+    <string name="label_login">Login</string>
+    <string name="label_university_website">vvg.hr</string>
+    <string name="url_university_website">https://www.vvg.hr</string>
+    <string name="book_added_message">%1$s added to your book collection!</string>
+</resources>
