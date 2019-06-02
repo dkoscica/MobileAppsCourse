@@ -35,9 +35,9 @@ The max point value for this task is **1 point**.
 * https://www.baeldung.com/retrofit
 
 ### Requirements
-* Create an Retrofit object in the constructor of the **NetworkManager** class
-* The Retrofit object must use the **OkHttpClient provideClient(SessionManager sessionManager)** method as a client.
-* The Retrofit object must use the **GsonConverterFactory provideConverterFactory()** method as converter factory.
+* Create an Retrofit instance in the constructor of the **NetworkManager** class
+* The Retrofit instance must use the **OkHttpClient provideClient(SessionManager sessionManager)** method as a client.
+* The Retrofit instance must use the **GsonConverterFactory provideConverterFactory()** method as converter factory.
 * Read the following article: https://medium.com/@son.rommer/fix-cleartext-traffic-error-in-android-9-pie-2f4e9e2235e6 and fix the Cleartext Traffic Error in Android 9 Pie. Use the **useCleartextTraffic** attribute method in the **AndroidManifest** to fix the issue.
 
 ## 3. Token validation - POST ValidateToken
@@ -52,8 +52,7 @@ The max point value for this task is **1 point**.
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **SplashViewModel** class.
-* Implement the **LiveData\<User> validateToken()** method within the **AuthInteractorImpl** class.
-* Use the **AuthService** to create a Retrofit network call
+* Implement the **LiveData\<User> validateToken()** method within the **AuthInteractorImpl** class. Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a User object, the app user should be redirected to the **HomeActivity**
 * Given that your receive a invalid response, error or the response doesn't contain a User object, the app user should be redirected to the **LoginActivity**
 
@@ -71,8 +70,7 @@ The max point value for this task is **1 point**.
     private AuthInteractor authInteractor = new AuthInteractorMockImpl();
     ```
   with **AuthInteractorImpl** within the **LoginViewModel** class.
-* Implement the **LiveData\<String> login(String email, String password)** method within the **AuthInteractorImpl** class.
-* Use the **AuthService** to create a Retrofit network call
+* Implement the **LiveData\<String> login(String email, String password)** method within the **AuthInteractorImpl** class. Use the **AuthService** to create a Retrofit network call
 * Given that your receive a valid response containing a token, store the token with the help of the **SessionManager** class and redirect the user to the **HomeActivity**
     ```java
     SessionManager.getInstance().setToken(token);
@@ -85,8 +83,7 @@ The max point value for this task is **1 point**.
 * Open **Postman** and take a look at the **GET BOOKS** method.
 * Add the **Call\<BookResponse> getBooks()** method to the **BookService** interface within **network/services** package.
 * Add a corresponding Retrofit annotation to the **Call\<BookResponse> getBooks()** method.
-* Implement the **MutableLiveData<List\<Book>> getBooks()** method within the **BookRepository** class.
-* Use the **BookService** to create a Retrofit network call
+* Implement the **MutableLiveData<List\<Book>> getBooks()** method within the **BookRepository** class. Use the **BookService** to create a Retrofit network call
 
 ## License
 * Copyright 2019 © Dominik Košćica.

@@ -28,6 +28,7 @@ This repository contains projects used for teaching purposes and, as such, sourc
 - [Android Architectures](https://drive.google.com/file/d/1Lk9U09fHvpyffWBKiu-vD-aQIRpmb9ai/view)
 - [Multithreading](https://drive.google.com/file/d/1jw2LpuoUQDfyV_--AQJyokFiMREODXn7/view)
 - [Networking](https://drive.google.com/file/d/1_mtTizhjt_JiSAxTxveosZFT-eKBTxLc/view)
+- [Persistence](https://drive.google.com/file/d/139XoJL-oRZTX-hB8CRiYKLltAESPWZNa/view)
 
 ## Design
 - [Material Design](https://material.io/design/)
