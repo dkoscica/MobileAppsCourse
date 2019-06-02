@@ -1,14 +1,14 @@
 ![](https://www.medicalcenter.virginia.edu/mobile-device-setup/colorsAndroidlogo.jpg/?s=50)
 
 # Lab 10
-Goal of this lab is to introduce Persistance in Android.
+Goal of this lab is to introduce Persistence in Android.
 
 ## Prerequisites
 * Use the **git pull origin master** command to pull the latest changes
 * Start using the Android Studio built in formatter. Each file that is modified or created **must** be formatted with the built in formatter: https://medium.com/mindorks/11-android-studio-shortcuts-every-android-developer-must-know-a153e736e611
 
 ## 1. Token persistance with SharedPreferences
-Goal of this task is to implement token persistance with SharedPreferences.</br>
+Goal of this task is to implement token persistence with SharedPreferences.</br>
 The max point value for this task is **1 point**.
 
 ### Lecture
@@ -19,7 +19,7 @@ The max point value for this task is **1 point**.
 
 ### Requirements
 * Refactor the **SessionManager** class. The **getToken** and **setToken** methods should use **SharedPreferences** to store and retrive the token String.
-* Since **SharedPreferences** require an Android Context use the **getContext()** method from **App** class to retrive the Android Context.
+* Since **SharedPreferences** require a Context use the **getContext()** method from **App** class to retrieve the App Context.
 
 ## 2. Basic API error handling
 Goal of this task is to implement basic Network error handling.</br>
@@ -93,7 +93,7 @@ https://developer.android.com/guide/topics/ui/look-and-feel/themes
         * Use the  **AppTheme.PrimaryButton** style for all primary buttons within the app
 
 ## 4. Book database
-Goal of this task is to implement the book database with the help of the Room library</br>
+Goal of this task is to implement the book database with the help of the Room library.</br>
 The max point value for this task is **2 points**.
 
 ### Lecture
@@ -119,8 +119,8 @@ The max point value for this task is **2 points**.
 * All database operations must be run on a background Thread. Use an AsyncTask or Thread to handle background processing
 * Implement the **void addBook(Book book)** within the **BookRepository**. The method should use the Room database to save the book model
 * Refactor the **getBooks** methods within the **BookRepository**. Given that the book from the API response is found in the database set the **setInCollection** to true, otherwise set it to false
-* Update the **BookRecyclerViewAdapter**, the basketImageView should only be displayed if the book is stored in the database
-* Update the **BookDetailsFragment**, the basketImageView should only be displayed if the book is stored in the database
+* Update the **BookRecyclerViewAdapter**, the basket ImageView should only be displayed if the book is stored in the database
+* Update the **BookDetailsFragment**, the basket ImageView should only be displayed if the book is stored in the database
 
 
 ## License

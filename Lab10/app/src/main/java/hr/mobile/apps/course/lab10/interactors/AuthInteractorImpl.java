@@ -45,8 +45,8 @@ public class AuthInteractorImpl implements AuthInteractor {
             }
 
             @Override
-            public void onFailure(Call<TokenResponse> call, Throwable t) {
-                Log.d(TAG, t.getLocalizedMessage());
+            public void onFailure(Call<TokenResponse> call, Throwable throwable) {
+                Log.d(TAG, throwable.getLocalizedMessage());
             }
         });
         return userLiveData;
@@ -66,8 +66,8 @@ public class AuthInteractorImpl implements AuthInteractor {
             }
 
             @Override
-            public void onFailure(Call<LoginResponse> call, Throwable t) {
-                Log.d(TAG, t.getLocalizedMessage());
+            public void onFailure(Call<LoginResponse> call, Throwable throwable) {
+                Log.d(TAG, throwable.getLocalizedMessage());
             }
         });
         return tokenLiveData;
