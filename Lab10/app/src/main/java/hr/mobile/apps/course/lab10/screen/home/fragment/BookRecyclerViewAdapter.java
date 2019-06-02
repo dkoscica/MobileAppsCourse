@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import hr.mobile.apps.course.lab10.R;
@@ -46,8 +47,8 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
     private List<Book> books;
     private RecyclerViewEventListener listener;
 
-    BookRecyclerViewAdapter(List<Book> books, RecyclerViewEventListener listener) {
-        this.books = books;
+    BookRecyclerViewAdapter(RecyclerViewEventListener listener) {
+        this.books = new ArrayList<>();
         this.listener = listener;
     }
 
@@ -72,6 +73,14 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
                 .load(book.getImage())
                 .placeholder(R.drawable.logo)
                 .into(holder.bookImageView);
+    }
+
+    public void setList(List<Book> books) {
+        if (books == null || books.isEmpty()) {
+            return;
+        }
+        this.books = books;
+        notifyDataSetChanged();
     }
 
     @Override

@@ -16,4 +16,8 @@ public class BookDetailsViewModel extends ViewModel {
         bookLiveData.setValue(book);
         return bookLiveData;
     }
+
+    public void addBook(final Book book) {
+        bookRepository.addBook(book);
+    }
 }

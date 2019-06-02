@@ -7,14 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import hr.mobile.apps.course.lab10.R;
 import hr.mobile.apps.course.lab10.screen.home.fragment.BookRVFragment;
-import hr.mobile.apps.course.lab10.screen.login.LoginActivity;
 import hr.mobile.apps.course.lab10.util.FragmentUtil;
 import hr.mobile.apps.course.lab10.util.IntentUtil;
 
 public class HomeActivity extends AppCompatActivity {
 
     public static void start(Context context) {
-        IntentUtil.startWithClearTask(context, LoginActivity.class);
+        IntentUtil.startWithClearTask(context, HomeActivity.class);
     }
 
     @Override

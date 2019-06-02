@@ -2,14 +2,13 @@ package hr.mobile.apps.course.lab10.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class Book {
 
     private long id;
+
     private String title;
     private long publisherId;
-    private int pages;
+    private long pages;
 
     @SerializedName("publication_date")
     private String publicationDate;
@@ -28,14 +27,15 @@ public class Book {
 
     @SerializedName("updated_at")
     private String updatedAt;
-    private List<String> tags;
-    private List<String> genres;
+
     private Publisher publisher;
+
+    private boolean isInCollection;
 
     public Book(long id,
                 String title,
                 long publisherId,
-                int pages,
+                long pages,
                 String publicationDate,
                 double bookRate,
                 long isbn13,
@@ -44,8 +44,6 @@ public class Book {
                 String description,
                 String createdAt,
                 String updatedAt,
-                List<String> tags,
-                List<String> genres,
                 Publisher publisher) {
         this.id = id;
         this.title = title;
@@ -59,8 +57,6 @@ public class Book {
         this.description = description;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
-        this.tags = tags;
-        this.genres = genres;
         this.publisher = publisher;
     }
 
@@ -92,7 +88,7 @@ public class Book {
         return pages;
     }
 
-    public void setPages(int pages) {
+    public void setPages(long pages) {
         this.pages = pages;
     }
 
@@ -160,27 +156,19 @@ public class Book {
         this.updatedAt = updatedAt;
     }
 
-    public List<String> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<String> tags) {
-        this.tags = tags;
-    }
-
-    public List<String> getGenres() {
-        return genres;
-    }
-
-    public void setGenres(List<String> genres) {
-        this.genres = genres;
-    }
-
     public Publisher getPublisher() {
         return publisher;
     }
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
+    }
+
+    public boolean isInCollection() {
+        return isInCollection;
+    }
+
+    public void setInCollection(boolean inCollection) {
+        isInCollection = inCollection;
     }
 }

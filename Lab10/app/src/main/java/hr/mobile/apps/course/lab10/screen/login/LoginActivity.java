@@ -89,20 +89,21 @@ public class LoginActivity extends AppCompatActivity {
     private void submitForm() {
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
+        String errorMessage = getString(R.string.error_invalid_credentials);
 
         if (!Validator.isValidEmail(email)) {
-            showInvalidCredentialsMessage();
+            showSnackbar(errorMessage);
             return;
         }
         if (!Validator.isValidPassword(password)) {
-            showInvalidCredentialsMessage();
+            showSnackbar(errorMessage);
             return;
         }
         loadingProgressBar.setVisibility(View.VISIBLE);
         loginViewModel.loginUser(email, password).observe(this, token -> {
             loadingProgressBar.setVisibility(View.INVISIBLE);
             if (token == null) {
-                showInvalidCredentialsMessage();
+                showSnackbar(errorMessage);
                 return;
             }
             Toast.makeText(this, token, Toast.LENGTH_SHORT).show();
@@ -110,9 +111,9 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void showInvalidCredentialsMessage() {
+    private void showSnackbar(String message) {
         LinearLayout loginActivityLayout = findViewById(R.id.loginActivityLayout);
-        Snackbar.make(loginActivityLayout, getString(R.string.error_invalid_credentials), Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(loginActivityLayout, message, Snackbar.LENGTH_SHORT).show();
     }
 
     private void addTextWatchers() {

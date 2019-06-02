@@ -70,11 +70,6 @@ public class BookRepository {
     }
 
     public void addBook(Book book) {
-        if (booksLiveData.getValue() == null) {
-            return;
-        }
-        List<Book> books = booksLiveData.getValue();
-        books.add(book);
-        booksLiveData.setValue(books);
+        //TODO Add to database
     }
 }

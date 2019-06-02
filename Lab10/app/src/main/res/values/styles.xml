@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.LogoImageView">
+
+    </style>
+
+    <style name="AppTheme.Progressbar">
+
+    </style>
+
 </resources>

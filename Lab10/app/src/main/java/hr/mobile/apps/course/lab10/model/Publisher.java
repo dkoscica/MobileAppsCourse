@@ -3,7 +3,9 @@ package hr.mobile.apps.course.lab10.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Publisher {
+
     private long id;
+
     private String name;
 
     @SerializedName("created_at")

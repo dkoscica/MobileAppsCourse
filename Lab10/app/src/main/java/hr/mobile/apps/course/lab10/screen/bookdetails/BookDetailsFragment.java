@@ -18,8 +18,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import hr.mobile.apps.course.lab10.R;
 import hr.mobile.apps.course.lab10.model.Book;
-import hr.mobile.apps.course.lab10.screen.home.fragment.BookRVFragment;
-import hr.mobile.apps.course.lab10.util.FragmentUtil;
 
 public class BookDetailsFragment extends Fragment {
 
@@ -87,15 +85,13 @@ public class BookDetailsFragment extends Fragment {
                 .placeholder(R.drawable.logo)
                 .into(bookImageView);
 
-        addBookFab.setOnClickListener((v) ->
-                Snackbar.make(addBookFab,
-                        String.format(getString(R.string.book_added_message), book.getTitle()), Snackbar.LENGTH_SHORT)
-                        .show()
-        );
-    }
+        addBookFab.setOnClickListener((v) -> {
+            Snackbar.make(addBookFab,
+                    String.format(getString(R.string.book_added_message), book.getTitle()), Snackbar.LENGTH_SHORT)
+                    .show();
 
-    private void replaceWithBookRVFragment() {
-        FragmentUtil.replaceFragment(getFragmentManager(), R.id.fragmentContainer, new BookRVFragment());
+            bookDetailsViewModel.addBook(book);
+        });
     }
 
 }
