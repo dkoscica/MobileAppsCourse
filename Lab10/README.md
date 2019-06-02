@@ -119,8 +119,8 @@ The max point value for this task is **2 points**.
 * All database operations must be run on a background Thread. Use an AsyncTask or Thread to handle background processing
 * Implement the **void addBook(Book book)** within the **BookRepository**. The method should use the Room database to save the book model
 * Refactor the **getBooks** methods within the **BookRepository**. Given that the book from the API response is found in the database set the **setInCollection** to true, otherwise set it to false
-* Update the **BookRecyclerViewAdapter**, the basket ImageView should only be displayed if the book is stored in the database
-* Update the **BookDetailsFragment**, the basket ImageView should only be displayed if the book is stored in the database
+* Update the **BookRecyclerViewAdapter**, the **basketImageView** should only be displayed if the book is stored in the database
+* Update the **BookDetailsFragment**, the **basketImageView** should only be displayed if the book is stored in the database
 
 
 ## License

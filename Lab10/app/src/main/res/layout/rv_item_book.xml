@@ -104,6 +104,7 @@
                 </LinearLayout>
 
                 <ImageView
+                    android:id="@+id/basketImageView"
                     android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
