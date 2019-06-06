@@ -7,7 +7,7 @@ import hr.mobile.apps.course.lab10.interactors.AuthInteractor;
 import hr.mobile.apps.course.lab10.interactors.AuthInteractorImpl;
 import hr.mobile.apps.course.lab10.model.User;
 
-class SplashViewModel extends ViewModel {
+public class SplashViewModel extends ViewModel {
 
     private AuthInteractor authInteractor = new AuthInteractorImpl();
 

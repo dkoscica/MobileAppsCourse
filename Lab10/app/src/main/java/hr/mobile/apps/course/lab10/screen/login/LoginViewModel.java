@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 import hr.mobile.apps.course.lab10.interactors.AuthInteractor;
 import hr.mobile.apps.course.lab10.interactors.AuthInteractorImpl;
 
-class LoginViewModel extends ViewModel {
+public class LoginViewModel extends ViewModel {
 
     private AuthInteractor authInteractor = new AuthInteractorImpl();
 
